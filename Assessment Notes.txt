@@ -1,0 +1,45 @@
+Execution 
+1. I created the data as per the requirement for the sales data of furniture. This included the following fields week start date product id product name ,units sold, price, discount percentage, revenue, region USA fixed 
+2. Then I created my FRED Account understanding the data for Average Gas Price and Consumer Price Index. Created an account and got the API Key to fetch data which is "2bef5770d514f4bcd9c45a8686583e74".This API Key was used to integrate the weekly average gas prices and the consumer price index or CPI. 
+3 This step involved the merging of two data that is the sales data of furniture and with economic indicators that included week dates that enriched the every sales record with relevant economic data. 
+4. Next step was to Refresh the data and implement automation which helps in fetching and updating of the sales and economic data every month. 
+5. My scripts include and satisfy the following requirement the new sales data, fetching latest economic indicators from FRED and merging of the two datasets. That includes saving of the combined dataset. 
+6 Data Integrity checks and Alerts include my work which has no missing values and also detects the anomalies in sales trend which helps us in forecasting unexpected spikes or missing products. 
+7. My code helps in alerting stakeholders via email if issues are detected during the data checks. 
+
+Approach Explanation 
+Data Creation
+Generates weekly aggregated sales data for 50 products.
+Introduces seasonality effects (higher sales during holidays, weekends).
+Implements discount impact—higher discounts lead to increased unit sales.
+Ensures product and region information is consistent.
+Economic Data Integration
+Used the FRED API to fetch data:2bef5770d514f4bcd9c45a8686583e74
+Weekly average gas prices (GASREGW)
+Consumer Price Index (CPIAUCSL)
+
+Fetches data using an API request and stores results in a structured format.
+
+Data Merging
+
+Joins sales data with economic indicators using week start date as the key.
+Ensures correct date alignment to avoid mismatches.
+
+Automation & Data Refresh
+
+The script is designed to run monthly, pulling the latest sales and
+economic data.
+New data is appended to existing datasets to maintain historical records.
+
+Data Integrity Checks
+
+Missing Values Check – Ensures no critical field (date, revenue, units
+sold) is missing.
+Anomaly Detection – Identifies unexpected spikes or drops in sales.
+Date Alignment Check – Verifies correct merging of sales and economic data.
+
+Alerting System
+
+If issues are detected, logs warnings in a file or sends an email alert. Helps maintain data quality and reliability.
+Email id used: narendrav64@gmail.com 
+App password generated: inalekvzhgcytmqs
